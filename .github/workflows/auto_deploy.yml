@@ -18,9 +18,9 @@ jobs:
       with:
           node-version: 12
           
-    -  name: Installing surge
-       run: npm install --global surge
-    -  name: Deploying using surge
-       run: surge ./ hamzaa.surge.sh -- token $ {{secrets.SURGE_TOKEN}}
+    - name: Installing surge
+      run: npm install --global surge
+    - name: Deploying using surge
+      run: surge ./ hamzaa.surge.sh -- token $ {{secrets.SURGE_TOKEN}}
    
   
